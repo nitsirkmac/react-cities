@@ -43,6 +43,6 @@ body {
     object-fit:cover;
   }
   
-   {
+  .thumb, clicked {
     border: 5px solid hotpink;
   }

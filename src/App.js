@@ -17,7 +17,7 @@ export default function App() {
   // CREATE A HANDLE CLICK FUNCTION THAT ACCEPTS AN IMAGE URL
   const handleClick = (img) => {
     setBigImage(img)
-    // setStyle('clicked')
+    style(clicked)
   }
  
   // THE FUNCTION SHOULD CALL setBigImage AND PASS IT THE URL
@@ -30,8 +30,8 @@ export default function App() {
     src={ele.img} 
     key={index} 
     alt={ele.city} 
-    style={{ border: bigImage === img ? 5px solid hotpink }}
-    onClick={{() => handleClick(ele.img)}} 
+    onClick={() => handleClick(ele.img)} 
+    // style={ bigImage === img ? border: '5px solid hotpink' }
     />
     )
   })
